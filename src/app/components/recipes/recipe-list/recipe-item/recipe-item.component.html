@@ -1,0 +1,17 @@
+<a
+  href="#"
+  class="d-flex row align-items-center list-group-item list-group-item-action px-0"
+  [ngClass]="setItemBorder(index)">
+
+  <div class="col-8">
+    <h4 class="card-header">{{ recipeName }}</h4>
+    <p class="card-text"> {{ recipeDescription }}</p>
+  </div>
+
+  <div class="col">
+    <img
+      class="card-img"
+      [src]="recipePath"
+      [alt]="recipeName" />
+  </div>
+</a>
