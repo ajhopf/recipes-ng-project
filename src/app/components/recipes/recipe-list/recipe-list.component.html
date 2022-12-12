@@ -1,20 +1,20 @@
 <div class="row">
-  <div class="col-xs-12">
-    <button class="btn btn-success my-3">New Recipe</button>
+  <div class="col-12">
+	<button class="btn btn-success my-3">New Recipe</button>
   </div>
   <hr>
-  <div class="col-xs-12">
-    <div class="list-group">
-      <app-recipe-item
-        *ngFor="let recipe of recipes; let i = index;"
-        [recipeName]="recipe.name"
-        [recipeDescription]="recipe.description"
-        [recipePath]="recipe.imagePath"
-        [index]="i"
-        [lastIndex]="recipes.length-1"
-      >
-      </app-recipe-item>
-    </div>
+  <div class="col-12">
+	<div class="list-group">
+	  <app-recipe-item
+		*ngFor="let recipe of recipes; let i = index;"
+		[recipeName]="recipe.name"
+		[recipeDescription]="recipe.description"
+		[recipePath]="recipe.imagePath"
+		[index]="i"
+		[lastIndex]="recipes.length-1"
+	  >
+	  </app-recipe-item>
+	</div>
   </div>
 
 </div>
